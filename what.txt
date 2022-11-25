@@ -1,0 +1,52 @@
+===MVC
+--
+- Cấu trúc project (M, V, C)
+
+- Tạo Home/Wow.cshtml, Wow Controller Action
+
+-- Demo Trang có Model
+- Tạo DemoModel.cs, Demo/Index.cshtml (Razor View), DemoController
+
+- ViewData và Layout 
+
+- RenderSectionAsync
+
+-- Middleware (UseHttpsRedirection, UseStaticFiles, UseRouting)
+- Program.cs
+
+- MapControllerRoute pattern
+
+- [Route()] Attribute
+
+===Razor
+--
+- Cấu trúc project (Pages)
+
+-- Demo Trang có Model
+- Tạo Demo.cshtml (Razor Page)
+
+- tạo RandomNumberController.cs, dùng MapControllers trong Program.cs
+- vào api/randomnuber, sử dụng nó trong Demo.cshtml
+
+-- Routing (MapRazorPages thay vì MapControllerRoute)
+- Program.cs
+
+===Blazor + EFCore
+--- JPFigure
+
+-- Frontend
+- ScaleFigurePage.razor 
+- Component: SelectWithSearch.razor
+
+-- Backend
+- FigureRepository
+- Blazor Server và Blazor WebAssembly
+
+--- EF Core 
+- Cách setup (Entity classes, JPFigureContext.cs, Program.cs)
+
+-- Sử dụng
+- Mở PgAdmin và kiểm tra thuộc tính của Character
+- Thêm thuộc tính Age cho Character.cs, 
+- Add migration, update database
+- Kiểm tra thuộc tính mới trên PgAdmin

@@ -1,0 +1,38 @@
+﻿@model DemoModel;
+@{
+	ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+	<h1 class="display-4">@Model.Header</h1>
+	<img style="width:60%; object-fit: contain" src="@Model.ImageUrl" />
+	<p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+
+
+@{
+	//string variable = "Wow: " + Model.ImageUrl;
+	//<a href="@Model.ImageUrl">@variable</a>
+
+	//<ul style="margin-top: 1rem">
+	//	@{
+	//		int i = 0;
+	//	}
+	//	@foreach (int number in Model.Numbers)
+	//	{
+	//		@if (i == 0)
+	//		{
+	//			<li style="font-weight:bold; color: crimson">@number</li>
+	//		}
+	//		else
+	//		{
+	//			<li>@number</li>
+	//		}
+	//		i++;
+	//	}
+	//</ul>
+
+	//@section Scripts {
+	//	<script>alert("Wow.")</script>
+	//}
+}

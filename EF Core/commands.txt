@@ -1,0 +1,4 @@
+dotnet ef migrations add AddCharacterAge --context JPFigureContext
+
+dotnet ef database update --context JPFigureContext
+
